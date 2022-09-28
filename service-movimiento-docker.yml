@@ -1,0 +1,17 @@
+server:
+ port: 9030
+spring:
+ application:
+  name: service-movimiento
+ jpa:
+  show-sql: true
+ datasource:
+  url: jdbc:mysql://host.docker.internal:3306/dbbanco
+  username: root
+  password: admin
+
+cuenta:
+ url: http://host.docker.internal:9040/api/cuentas
+
+cliente:
+ url: http://host.docker.internal:9050/api/clientes

@@ -9,32 +9,3 @@ spring:
   url: jdbc:mysql://localhost:3306/dbbanco
   username: root
   password: admin
-# server:
-#  port: 9050
-# spring:
-#  profiles:
-#   active: dev
-#  application:
-#   name: service-cliente
-#  jpa:
-#   show-sql: true
-  
-# ---
-# spring:
-#  config:
-#   activate:
-#    on-profile: dev
-#  datasource:
-#   url: jdbc:mysql://localhost:3306/dbbanco
-#   username: root
-#   password: admin
-
-# ----
-# spring:
-#  config:
-#   activate:
-#    on-profile: docker
-#  datasource:
-#   url: jdbc:mysql://host.docker.internal:3306/dbbanco
-#   username: root
-#   password: admin

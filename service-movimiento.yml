@@ -1,3 +1,5 @@
+#For all profiles
+
 server:
  port: 9030
 spring:
@@ -5,6 +7,28 @@ spring:
   name: service-movimiento
  jpa:
   show-sql: true
+
+
+#dev
+---
+spring:
+ profiles: dev
+ datasource:
+  url: jdbc:mysql://localhost:3306/dbbanco
+  username: root
+  password: admin
+
+cuenta:
+ url: http://localhost:9040/api/cuentas
+
+cliente:
+ url: http://localhost:9050/api/clientes
+ 
+
+#docker
+---
+spring:
+ profiles: docker
  datasource:
   url: jdbc:mysql://host.docker.internal:3306/dbbanco
   username: root
